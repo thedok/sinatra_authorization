@@ -1,0 +1,14 @@
+<div class="container">
+
+	<h1>Welcome to my app</h1>
+
+  <%# TODO: 
+  1. If user is not signed in - display "Welcome".
+  2. If user is signed in then  display all users %>
+  <% if @users %>
+  <% @users.each do |user| %>
+ <p> <%= "#{user.id} #{user.name} #{user.email}" %></p>
+  <% end %>
+  <% end %>
+
+</div>
